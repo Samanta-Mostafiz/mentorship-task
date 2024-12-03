@@ -1,48 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Box Model</title>
-  <style>
-    /* Container styling */
-    .container {
-      width: 900px;
-      padding: 15px;
-      background-color: #0a0a09;
-      border: 5px solid red;
-      box-sizing: border-box; 
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /* basic styling */
+      .container {
+        width: 900px;
+        padding: 15px;
+        background-color: #0a0a09;
+        border: 5px solid red;
+        box-sizing: border-box;
+      }
+      .one,
+      .two,
+      .three {
+        display: inline-block;
+        color: white;
+        text-align: center;
+      }
 
-    /* Child elements */
-    .one, .two, .three {
-      display: inline-block;
-      color: white;
-      text-align: center;
-    }
-
-    .one {
-      width: 270px;
+      /* content box */
+      /* .one {
+      width: 300px;
       background-color: cadetblue;
     }
 
     .two {
-      width: 170px;
+      width: 200px;
       background-color: #15ba03;
     }
 
     .three {
-      width: 270px;
+      width: 300px;
       background-color: coral;
-    }
-  </style>
+    } */
 
-</head>
-<body>
-  <div class="container">
-    <div class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, alias?</div>
-    <div class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, libero.</div>
-    <div class="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, facere!</div>
-  </div>
-</body>
+      /* border box */
+
+      .one {
+        width: 270px;
+        background-color: cadetblue;
+      }
+
+      .two {
+        width: 170px;
+        background-color: #15ba03;
+      }
+
+      .three {
+        width: 270px;
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, alias?
+      </div>
+      <div class="two">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, libero.
+      </div>
+      <div class="three">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+        facere!
+      </div>
+    </div>
+  </body>
 </html>
